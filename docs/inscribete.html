@@ -10,11 +10,12 @@
     <meta name="keywords" content="" />
     <meta name="author" content="Ficohsa" />
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Hecho en casa - Ficohsa</title>
   </head>
-  <body>
-    <div class="container">
+  <body id="project-body">
+    <div>
         <header>
             <div class="header-elements-container">
                 <a href="index.html" id="hec-logo"><img src="img/hec.svg"></a>
@@ -40,49 +41,293 @@
                     <img src="">
                 </div>
             </div>
-            <div class="intro-copy">
-                <div class="content-width">
-                <h2 class="section-subtitles">INSCRÍBETE EN HECHO EN CASA</h2>
-                <p>Llena el siguiente formulario, espera la aprobación y forma parte de nuestro programa Hecho en Casa que apoya a las pequeñas, medianas y grandes empresas hondureñas y así al desarrollo sostenible de Honduras.</p>
-                </div>
-            </div>
-            <div id="member-form">
-                <div id="form-p1">
-                    <h3>INFORMACIÓN GENERAL DE LA EMPRESA</h3>
-                    <div>
-                        
-                    </div>
-                    <div>
-                        
+            <div class="main-content">
+                <div class="intro-copy">
+                    <div class="content-width">
+                    <h2 class="section-subtitles">INSCRÍBETE EN HECHO EN CASA</h2>
+                    <p>Llena el siguiente formulario, espera la aprobación y forma parte de nuestro programa Hecho en Casa que apoya a las pequeñas, medianas y grandes empresas hondureñas y así al desarrollo sostenible de Honduras.</p>
                     </div>
                 </div>
-                <div id="form-p2">
-                    <h3>ORIGEN DE LA EMPRESA</h3>
-                    
-                </div>
-                <div id="form-p3">
-                    <h3>UBICACIÓN Y CONTACTO DE LA EMPRESA</h3>
-                    <div>
-                        
+                <div id="member-form">
+                    <div id="form-p1">
+                        <h3 class="form-title">INFORMACIÓN GENERAL DE LA EMPRESA</h3>
+                        <div class="inputs">
+                            <div class="inputs-left">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="formGroupExampleInput">Nombre de la empresa</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe aquí">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="formGroupExampleInput2">Descripción corta de la empresa</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe aquí">
+                                  </div>
+                                  <div class="form-group">
+                                      <label>Rubro de la empresa</label>
+                                      <select class="form-control">
+                                        <option>Selecciona</option>
+                                         <option>Alimentos</option>
+                                         <option>Bebidas</option>
+                                         <option>Calzado</option>
+                                         <option>Cuero</option>
+                                         <option>Lácteos</option>
+                                         <option>Limpieza</option>
+                                         <option>Manualidades</option>
+                                         <option>Muebles</option>
+                                         <option>Panadería</option>
+                                         <option>Repostería</option>
+                                         <option>Ropa</option>
+                                         <option>Tecnología</option>
+                                         <option>Otros</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput2">Principales productos (separados por comas)</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe aquí">
+                                  </div>
+                                </form>
+                            </div>
+                            <div class="inputs-right">
+                                <form>
+                                  <div class="form-group">
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                  </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
-                    <div>
-                        
+                    <div id="form-p2">
+                        <h3 class="form-title">ORIGEN DE LA EMPRESA</h3>
+                            <div class="sliders">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="formControlRange">¿Qué porcentaje de su empresa es de capital hondureño?</label>
+                                    <input type="range" class="form-control-range" id="formControlRange">
+                                  </div>
+                                </form>
+                                <form>
+                                  <div class="form-group">
+                                    <label for="formControlRange">¿Qué porcentaje de su cadena productiva ocurre en territorio hondureño?</label>
+                                    <input type="range" class="form-control-range" id="formControlRange">
+                                  </div>
+                                </form>
+                                <form>
+                                  <div class="form-group">
+                                    <label for="formControlRange">¿Qué porcentaje de hondureños participan en la producción de sus productos?</label>
+                                    <input type="range" class="form-control-range" id="formControlRange">
+                                  </div>
+                                </form>
+                            </div>
                     </div>
+                    <div id="form-p3">
+                        <h3 class="form-title">UBICACIÓN Y CONTACTO DE LA EMPRESA</h3>
+                        <div class="inputs">
+                            <div class="inputs-left">
+                                <div class="form-group">
+                                      <label>Dirección física principal de la empresa</label>
+                                        <select class="form-control">
+                                            <option>Departamento</option>
+                                             <option>Francisco Morazán</option>
+                                             <option>Islas de la Bahía</option>
+                                             <option>Cortés</option>
+                                             <option>Atlántida</option>
+                                             <option>Yoro</option>
+                                             <option>Colón</option>
+                                             <option>Comayagua</option>
+                                             <option>Valle</option>
+                                             <option>Choluteca</option>
+                                             <option>Olancho</option>
+                                             <option>La Paz</option>
+                                             <option>El Paraíso</option>
+                                             <option>Ocotepeque</option>
+                                             <option>Copán</option>
+                                             <option>Santa Bárbara</option>
+                                             <option>Intibucá</option>
+                                             <option>Gracias a Dios</option>
+                                             <option>Lempira</option>
+                                        </select>
+                                        <select class="form-control">
+                                            <option>Ciudad</option>
+                                        </select>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Dirección">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Sucursales en otros departamentos</label>
+                                        <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                              <label class="form-check-label" for="exampleRadios1">
+                                                Si
+                                              </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                          <label class="form-check-label" for="exampleRadios2">
+                                            No
+                                          </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="departments-1">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Francisco Morazán
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Cortés
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Islas de la Bahía
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Atlántida
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Yoro
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                               Colón
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Comayagua
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Valle
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                               Choluteca
+                                              </label>
+                                            </div>
+                                            </div>
+                                            <div class="departments-2">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Olancho
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                La Paz
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                El Paraíso
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Ocotepeque
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Copán
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                               Santa Bárbara
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Intibucá
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">
+                                                Gracias a Dios
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                              <label class="form-check-label" for="defaultCheck1">Lempira
+                                              </label>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="inputs-right">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Correo electrónico</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="@">
+                                </div>
+                                 <div class="form-group">
+                                    <label for="formGroupExampleInput">Teléfono principal</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+504-">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Teléfono secundario</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+504-">
+                                </div>
+                                 <div class="form-group">
+                                    <label for="formGroupExampleInput">Página web</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder=".com">
+                                </div>
+                                 <div class="form-group">
+                                    <label for="formGroupExampleInput">Enlace a la página de facebook</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="@">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Instagram</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="@">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button id="registrarme">REGISTRARME</button>
                 </div>
-                <button id="registrarme">REGISTRARME</button>
             </div>
             <div class="snipet-blue">
-                <a href="">VISITA EL BAZAR DEL SÁBADO</a>
+                <a class="button-ghost" href="bazar.html">VISITA EL BAZAR DEL SÁBADO</a>
             </div>
         </main>
         <footer>
             <div>
-            <img src="img/facebook.svg">
-            <img src="img/twitter.svg">
+            <a target="_blank" href="https://www.facebook.com/ficohsa/"><img class="sm" src="img/facebook.svg"></a>
+            <a target="_blank" href="https://twitter.com/ficohsa"><img class="sm" src="img/twitter.svg"></a>
             </div>
             <p>Comprometidos a ser mejores</p>
-            <img src="img/ficohsa.svg">
+            <a target="_blank" href="https://www.ficohsa.com/honduras/"><img id="ficohsa-logo" src="img/ficohsa.svg"></a>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
