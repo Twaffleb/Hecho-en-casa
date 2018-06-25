@@ -10,11 +10,12 @@
     <meta name="keywords" content="" />
     <meta name="author" content="Ficohsa" />
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Hecho en casa - Ficohsa</title>
   </head>
-  <body>
-    <div class="container">
+  <body id="project-body">
+    <div>
         <header>
             <div class="header-elements-container">
                 <a href="index.html" id="hec-logo"><img src="img/hec.svg"></a>
@@ -37,6 +38,7 @@
                     <!--<img src="img/hec-bazar.svg">-->
                 </div>
             </div>
+            <div class="main-content">
             <div class="intro-copy">
                 <div class="content-width">
                 <h2 class="highlighted-text">¿Buscas un lugar dónde vender o comprar productos hondureños?</h2>
@@ -49,13 +51,14 @@
                 En el bazar del sábado se encuentran productos artesanales 100% hondureños desde productos de cuero, accesorios, manualidades, bisutería, productos orgánicos de uso personal hasta alimentos y bebidas naturales.</p>
                 </div>
             </div>
+            </div>
             <div id="bazar-grid">
                 <div class="row" id="row-1">
                     <div class="row-image">
                         <img src="img/bazar-pic-1.jpg">
                     </div>
                     <div class="row-text" class="row-text-orange" id="horarios">
-                        <h3>LUGARES Y HORARIOS</h3>
+                        <h3 class="section-subtitles-w">LUGARES Y HORARIOS</h3>
                         <p>
                             San Pedro Sula : Expocentro Col, Las Brisas
                             <br>
@@ -70,7 +73,7 @@
                 </div>
                 <div class="row" id="row-2">
                     <div class="row-text" class="row-text-blue" id="participar">
-                        <h3>CÓMO PARTICIPAR</h3>
+                        <h3 class="section-subtitles-w">CÓMO PARTICIPAR</h3>
                         <p>
                             Requisito: Exponer productos hondureños.
                             <br>
@@ -88,7 +91,7 @@
                         <img src="img/bazar-pic-3.jpg">
                     </div>
                     <div class="row-text" class="row-text-orange" id="contacto">
-                        <h3>CONTÁCTANOS</h3>
+                        <h3 class="section-subtitles-w">CONTÁCTANOS</h3>
                         <p>bazar@ccichonduras.org</p>
                         <div id="locations">
                             <div>
@@ -107,12 +110,15 @@
         </main>
         <footer>
             <div>
-            <img src="img/facebook.svg">
-            <img src="img/twitter.svg">
+            <a target="_blank" href="https://www.facebook.com/ficohsa/"><img class="sm" src="img/facebook.svg"></a>
+            <a target="_blank" href="https://twitter.com/ficohsa"><img class="sm" src="img/twitter.svg"></a>
             </div>
             <p>Comprometidos a ser mejores</p>
-            <img src="img/ficohsa.svg">
+            <a target="_blank" href="https://www.ficohsa.com/honduras/"><img id="ficohsa-logo" src="img/ficohsa.svg"></a>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>

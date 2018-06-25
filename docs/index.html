@@ -10,11 +10,13 @@
     <meta name="keywords" content="" />
     <meta name="author" content="Ficohsa" />
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Hecho en casa - Ficohsa</title>
   </head>
-  <body>
-    <div class="container">
+  <body id="project-body">
+    <div>
         <header>
             <div class="header-elements-container">
                 <a href="index.html" id="hec-logo"><img src="img/hec.svg"></a>
@@ -33,8 +35,9 @@
         </header>
         <main>
             <div class="hero-banner">
-                <img src="img/arrow-down.svg" alt="">
+                <a href="#que-es"><img src="img/arrow-down.svg" alt=""></a>
             </div>
+            <div class="main-content">
             <div class="intro-copy" id="que-es">
                 <div class="content-width">
                 <h1 class="section-subtitles">¿QUÉ ES HECHO EN CASA?</h1>
@@ -47,19 +50,21 @@
 
                 <p>     
                 Este programa nace con la finalidad de generar un impacto real en el bienestar del país, aumentando la producción nacional, generando empleo y abriendo un abanico de posibilidades para los productos nacionales a través de una alianza entre productor y consumidor promoviendo un crecimiento compartido que conduzca al país a una mayor cohesión social para lograr una Honduras más próspera.</p>
-
+                <div id="video-container">
                 <iframe id="description-video" width="560" height="315" src="https://www.youtube.com/embed/nVtfiYt8KHI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
                 <div id="home-links">
-                <a class="blue-button" href="">COMPARTIR EN FACEBOOK</a>
+                <a class="blue-button"href="http://www.facebook.com/dialog/share?app_id=87741124305&amp;href=https%3A//www.youtube.com/attribution_link%3Fa%3DdVNLjazFPYo%26u%3D%252Fwatch%253Fv%253DnVtfiYt8KHI%2526feature%253Dplayer_embedded&amp;display=popup&amp;redirect_uri=https://www.youtube.com/facebook_redirect" target="_blank"><i class="fas fa-share-alt"></i> COMPARTIR EN FACEBOOK</a>
                 <a class="blue-button" href="inscribete.html">¿CÓMO SER PARTE?</a>
                 </div>
-                <img src="img/arrow-down-blue.svg">
+                <a href="#home-grid"><img src="img/arrow-down-blue.svg"></a>
                 </div>
             </div>
-            <div class="home-grid">
+            </div>
+            <div id="home-grid" class="home-grid">
                 <div class="row" id="row-1">
                     <div class="row-text">
-                        <h1>MIEMBROS DE HECHO EN CASA</h1>
+                        <h1 class="section-subtitles">MIEMBROS DE HECHO EN CASA</h1>
                         <p>Muchos emprendedores y empresas hondureñas ya son parte del programa.</p>
                         <a class="blue-button" href="">CONÓCELOS AQUÍ</a>
                     </div>
@@ -72,7 +77,7 @@
                         <img src="img/home-photo-2.jpg">
                     </div>
                     <div class="row-text">
-                        <h1>EL BAZAR DEL SÁBADO</h1>
+                        <h1 class="section-subtitles">EL BAZAR DEL SÁBADO</h1>
                         <p>Programa que apoya a emprendedores y motiva a los hondureños a comprar lo nuestro. Representa una enorme oportunidad para promover la calidad de los productos, reforzando su compromiso en crear estructuras de mejora continua, para ser altamente competitivos, tanto en el mercado nacional como internacional.</p>
                         <a class="blue-button" href="">CONOCER MÁS</a>
                     </div>
@@ -81,12 +86,15 @@
         </main>
         <footer>
             <div>
-            <img src="img/facebook.svg">
-            <img src="img/twitter.svg">
+            <a target="_blank" href="https://www.facebook.com/ficohsa/"><img class="sm" src="img/facebook.svg"></a>
+            <a target="_blank" href="https://twitter.com/ficohsa"><img class="sm" src="img/twitter.svg"></a>
             </div>
             <p>Comprometidos a ser mejores</p>
-            <img src="img/ficohsa.svg">
+            <a target="_blank" href="https://www.ficohsa.com/honduras/"><img id="ficohsa-logo" src="img/ficohsa.svg"></a>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
