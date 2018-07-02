@@ -49,20 +49,20 @@
                     </div>
                 </div>
                 <div id="member-form">
-                    <div id="form-p1">
+                    <div class="form-section" id="form-p1">
                         <h3 class="form-title">INFORMACIÓN GENERAL DE LA EMPRESA</h3>
                         <div class="inputs">
                             <div class="inputs-left">
                                 <form>
-                                  <div class="form-group">
+                                  <div class="input" class="form-group">
                                     <label for="formGroupExampleInput">Nombre de la empresa</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe aquí">
                                   </div>
-                                  <div class="form-group">
+                                  <div class="input" class="form-group">
                                     <label for="formGroupExampleInput2">Descripción corta de la empresa</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe aquí">
                                   </div>
-                                  <div class="form-group">
+                                  <div class="input" class="form-group">
                                       <label>Rubro de la empresa</label>
                                       <select class="form-control">
                                         <option>Selecciona</option>
@@ -81,50 +81,65 @@
                                          <option>Otros</option>
                                         </select>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="input" class="form-group">
                                         <label for="formGroupExampleInput2">Principales productos (separados por comas)</label>
                                         <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe aquí">
                                   </div>
                                 </form>
                             </div>
                             <div class="inputs-right">
-                                <form>
-                                  <div class="form-group">
+                                <form class="ui-container">
+                                  <div class="upload-image">
+                                    <img src="img/image.svg">
                                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                                   </div>
+                                   <label>Selecciona una imagen</label>
                                 </form>
                             </div>
                         </div>
 
                     </div>
-                    <div id="form-p2">
+                    <div class="form-section" id="form-p2">
                         <h3 class="form-title">ORIGEN DE LA EMPRESA</h3>
                             <div class="sliders">
                                 <form>
-                                  <div class="form-group">
+                                  <div>
                                     <label for="formControlRange">¿Qué porcentaje de su empresa es de capital hondureño?</label>
+                                    <div class="slider">
+                                    <p>0%</p>
                                     <input type="range" class="form-control-range" id="formControlRange">
+                                     <p>100%</p>
+                                     </div>
                                   </div>
                                 </form>
                                 <form>
-                                  <div class="form-group">
+                                  <div>
                                     <label for="formControlRange">¿Qué porcentaje de su cadena productiva ocurre en territorio hondureño?</label>
+                                    <div class="slider">
+                                    <p>0%</p>
                                     <input type="range" class="form-control-range" id="formControlRange">
+                                     <p>100%</p>
+                                     </div>
                                   </div>
                                 </form>
                                 <form>
-                                  <div class="form-group">
+                                  <div>
                                     <label for="formControlRange">¿Qué porcentaje de hondureños participan en la producción de sus productos?</label>
+                                    <div class="slider">
+                                    <p>0%</p>
                                     <input type="range" class="form-control-range" id="formControlRange">
+                                     <p>100%</p>
+                                     </div>
                                   </div>
                                 </form>
+                            
                             </div>
                     </div>
-                    <div id="form-p3">
+                    <div class="form-section" id="form-p3">
                         <h3 class="form-title">UBICACIÓN Y CONTACTO DE LA EMPRESA</h3>
                         <div class="inputs">
                             <div class="inputs-left">
-                                <div class="form-group">
+                                <div id="direccion" class="input" class="form-group">
                                       <label>Dirección física principal de la empresa</label>
                                         <select class="form-control">
                                             <option>Departamento</option>
@@ -152,8 +167,9 @@
                                         </select>
                                         <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Dirección">
                                     </div>
-                                    <div class="form-group">
+                                    <div class="input" class="form-group">
                                         <label>Sucursales en otros departamentos</label>
+                                        <div class="ratios">
                                         <div class="form-check">
                                               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                               <label class="form-check-label" for="exampleRadios1">
@@ -166,7 +182,8 @@
                                             No
                                           </label>
                                         </div>
-                                        <div class="form-group">
+                                        </div>
+                                        <div class="checks">
                                             <div class="departments-1">
                                             <div class="form-check">
                                               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -282,27 +299,27 @@
                                     </div>
                             </div>
                             <div class="inputs-right">
-                                <div class="form-group">
+                                <div class="input" class="form-group">
                                     <label for="formGroupExampleInput">Correo electrónico</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="@">
                                 </div>
-                                 <div class="form-group">
+                                 <div class="input" class="form-group">
                                     <label for="formGroupExampleInput">Teléfono principal</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+504-">
                                 </div>
-                                <div class="form-group">
+                                <div class="input" class="form-group">
                                     <label for="formGroupExampleInput">Teléfono secundario</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+504-">
                                 </div>
-                                 <div class="form-group">
+                                 <div class="input" class="form-group">
                                     <label for="formGroupExampleInput">Página web</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder=".com">
                                 </div>
-                                 <div class="form-group">
+                                 <div class="input" class="form-group">
                                     <label for="formGroupExampleInput">Enlace a la página de facebook</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="@">
                                 </div>
-                                <div class="form-group">
+                                <div class="input" class="form-group">
                                     <label for="formGroupExampleInput">Instagram</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="@">
                                 </div>
