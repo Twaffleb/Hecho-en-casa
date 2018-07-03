@@ -65,14 +65,9 @@ nav ul li a:hover {
 	display: inline-block;
 	width: 100%;
 	height: 500px;
-	background-color: grey;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-}
-.hero-banner img{
-	margin-bottom: 30px;
-	width: 40px;
 }
 .main-content{
 	background-image: url(img/texture-bg.jpg);
@@ -257,6 +252,61 @@ footer img{
 #volver-al-inicio a:hover{
 	text-decoration: none;
 }
+.hero-width{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1800px;
+	margin: 0 auto;
+}
+.hero-text, .hero-image{
+	width: 50%;
+	height: 100%;
+}
+.hero-image{
+	display: flex;
+	align-items: center;
+}
+.hero-image img{
+	width: auto;
+}
+.hero-banner-1{
+	background-image: url(img/hero-bg-1.jpg);
+	background-repeat: repeat-x;
+}
+.hero-banner-2{
+	background-image: url(img/hero-bg-2.jpg);
+	background-repeat: repeat-x;
+}
+.hero-banner-3{
+	background-image: url(img/hero-bg-3.jpg);
+	background-repeat: repeat-x;
+}
+.hero-banner-4{
+	background-image: url(img/hero-bg-4.jpg);
+	background-repeat: repeat-x;
+}
+.hero-banner-4 img{
+	height: 50%;
+}
+#hero-bazar{
+	height: 500px;
+}
+
+.hero-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+.hero-text h1{
+	color: white;
+	font-weight: 700;
+	font-size: 50px;
+	border-bottom: 4px solid #FF9D2B;
+	margin:0 auto;
+}
+
 
 /* index */
 
