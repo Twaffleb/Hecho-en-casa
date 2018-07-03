@@ -270,6 +270,12 @@ footer img{
 .hero-image img{
 	width: auto;
 }
+.hero-banner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .hero-banner-1{
 	background-image: url(img/hero-bg-1.jpg);
 	background-repeat: repeat-x;
@@ -366,7 +372,23 @@ footer img{
 #contacto a{
 	color: white;
 }
+#hero-arrow{
+	position: absolute;
+}
+#lo-quiero{
+	position: absolute;
+	width: 500px;
+}
+#carouselExampleSlidesOnly{
+	height: 100%;
+	overflow: hidden;
+}
 
+.carrousel-inner{
+	height: 100%;
+	object-fit: fill;
+	overflow: hidden;
+}
 /* miembros */
 
 #profile-filters{
