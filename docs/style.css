@@ -35,6 +35,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0 auto;
 }
 #hec-logo{
 	width: 110px;
@@ -802,5 +803,71 @@ footer img{
     letter-spacing: 3px;
     margin: 0 auto;
     margin-bottom: 100px;
+}
+.mm{
+	display: none;
+}
+#x{
+	display: none;
+}
+@media (max-width: 1000px){
+	header{
+		background-color: transparent;
+		border-top: none;
+		display: none;
+		flex-direction: column;
+		background-color: #FF9D2B;
+		height: 100%;
+	}
+	.header-elements-container{
+
+	}
+	#x{
+		display: block;
+		position: absolute;
+		width: 100px;
+		height: 90px;
+		left: 0;
+		top: 0;
+		padding: 30px;
+	}
+	#x img{
+		width: 30px;
+		height: 30px;
+
+	}
+	.mm{
+		position: absolute;
+		display: flex;
+		z-index: 1;
+		width: 180px;
+	}
+	#hamburger{
+		width: 90px;
+		height:90px;
+		background-color: #085BA8;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#hec-logo-2{
+		width: 90px;
+		height:90px;
+		background-color: white;	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#hec-logo-2 img{
+		width: 70px;
+		height: 70px;
+	}
+	#hec-logo{
+		display: none;
+	}
+}
+
+@media (max-width: 700px){
+
 }
 
