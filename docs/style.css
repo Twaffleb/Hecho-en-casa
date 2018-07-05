@@ -99,6 +99,7 @@ nav ul li a:hover {
 	line-height: 36px;
 	font-weight: 600;
 	margin-bottom: 40px;
+	text-align: center;
 }
 .section-subtitles-w{
 	font-size: 30px;
@@ -295,9 +296,14 @@ footer img{
 }
 .hero-banner-4 img{
 	height: 50%;
+	max-width: 80%;
 }
 #hero-bazar{
 	height: 500px;
+}
+#hero-banner-index{
+	background-image: url(img/hero-bg-1.jpg);
+	background-repeat: repeat-x;
 }
 
 .hero-text{
@@ -374,11 +380,15 @@ footer img{
 	color: white;
 }
 #hero-arrow{
-	position: absolute;
+	margin-bottom: 30px;
+}
+#hero-arrow img{
+	width: 40px;
 }
 #lo-quiero{
 	position: absolute;
-	width: 500px;
+	width: 70%;
+	max-width: 500px;
 }
 #carouselExampleSlidesOnly{
 	height: 100%;
@@ -630,12 +640,19 @@ footer img{
 	text-align: justify;
 }
 /* inscribete */
+#member-form i{
+	margin-right: 5px;
+	font-size: 7px;
+}
 #member-form{
 	background-color: #D9FCFF;	
 	margin: 0 auto;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	max-width: 1200px;
+	border-radius: 10px;
+	margin-bottom: 30px;
 }
 .form-title{
 	font-size: 24px;
@@ -676,7 +693,7 @@ footer img{
 }
 .slider{
 	display: flex;
-	width: 800px;
+	width: 500px;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
@@ -766,6 +783,24 @@ footer img{
 #direccion .form-control{
 	margin: 10px;
 }
+.phone-fields{
+	display: flex;
+	align-items: center;
+}
+.phone-fields img{
+	display: inline-block;
+	margin: 10px;
+}
+.phone-fields #defaultCheck1{
+	margin: 2px;
+}
+.note{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #FF9D2B;
+	font-size: 14px;
+    font-weight: 600;
+}
 /* confirmation */
 
 #member-confirmation{
@@ -775,6 +810,7 @@ footer img{
 	justify-content: center;
 	flex-direction: column;
 	padding: 150px;
+	text-align: center;
 }
 #member-confirmation h3{
 	color: #7AD6DF;
@@ -815,19 +851,41 @@ footer img{
 		background-color: transparent;
 		border-top: none;
 		display: none;
-		flex-direction: column;
 		background-color: #FF9D2B;
 		height: 100%;
+		position: absolute;
+		z-index: 1;
 	}
 	.header-elements-container{
-
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.navigation{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	ul{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
 	}
 	#x{
 		display: block;
 		position: absolute;
-		width: 100px;
+		width: 90px;
 		height: 90px;
-		left: 0;
+		right: 0;
 		top: 0;
 		padding: 30px;
 	}
@@ -839,7 +897,7 @@ footer img{
 	.mm{
 		position: absolute;
 		display: flex;
-		z-index: 1;
+		z-index: 2;
 		width: 180px;
 	}
 	#hamburger{
@@ -865,9 +923,121 @@ footer img{
 	#hec-logo{
 		display: none;
 	}
+	.section-subtitles, .section-subtitles-w{
+		font-size: 30px;
+	}
+	.blue-button{
+		font-size: 14px;
+	}
+	.button-ghost{
+		font-size: 14px;
+	}
+	#registrarme{
+		font-size: 14px;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.row div{
+		width: 100%;
+	}
+	#row-2{
+		flex-direction: column-reverse;
+	}
+	.hero-text h1{
+		font-size: 40px;
+	}
+	.dropdown{
+		flex-direction: column;
+		align-items: center;
+	}
+	.news-display{
+		flex-direction: column;
+	}
+	#news-image, .news-text{
+		width: 100%;
+	}
+	.news-text{
+		padding: 60px;
+	}
+}
+@media (max-width: 800px){
+	.inputs{
+		flex-direction: column;
+	}
+	.inputs-left, .inputs-right{
+		width: 100%;
+	}
+	.slider{
+		width: 70%;
+	}
+	.form-title{
+		font-size: 20px;
+	}
+	.news-card{
+		width: 300px;
+	}
+	.news-title h3{
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 700px){
-
+	footer{
+		display: flex;
+		flex-direction: column;
+		height: 200px;
+		text-align: center;
+	}
+	footer p{
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	.hero-text h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.hero-width{
+		flex-direction: column;
+	}
+	.hero-text, .hero-image{
+		height: 250px;
+		width: 100%;
+	}
+	.hero-image img{
+		height: 100%;
+		margin: 0 auto;
+	}
+	.hero-text {
+		justify-content: flex-end;
+		flex-direction: column;
+	}
+	#profile-filters{
+		flex-direction: column;
+		height: 300px;
+	}
+	.dropdown{
+		height: 100px;
+		box-sizing: border-box;
+	}
+	.dropdown button{
+		margin: 0 auto;
+	}
+	.content-width{
+		padding-top: 50px;
+		padding-bottom: 10px;
+	}
+	.highlighted-text{
+		font-size: 26px;
+	}
+	#member-confirmation{
+		padding: 50px
+	}
+	#member-confirmation button{
+		width: 250px;
+	}
+	#locations{
+		flex-direction: column;
+	}
 }
 

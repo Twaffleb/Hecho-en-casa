@@ -22,7 +22,7 @@
                 <div class="navigation">
                     <nav>
                          <ul>
-                            <li><a href="index.html">¿QUÉ ES HEC?</a></li>
+                            <li><a href="#que-es">¿QUÉ ES HEC?</a></li>
                             <li><a href="miembros.html">MIEMBROS</a></li>
                             <li><a href="inscribete.html">INSCRÍBETE</a></li>
                             <li><a href="noticias.html">NOTICIAS</a></li>
@@ -30,8 +30,13 @@
                         </ul>
                     </nav>
                 </div>
+                <div id="x"><img src="img/x.svg"></div>
                 </div>
         </header>
+        <div class="mm">
+                <div id="hamburger"><img src="img/hamburger.svg"></div>
+                <a href="index.html" id="hec-logo-2"><img src="img/hec.svg"></a>
+            </div>
         <main>
             <div class="hero-banner-3">
                 <div class="hero-width">
@@ -97,5 +102,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+      jQuery(document).ready(function(){
+
+      jQuery('#hamburger').click(function(){
+      jQuery('header').fadeToggle();
+      });
+
+      jQuery('#x').click(function(){
+      jQuery('header').fadeToggle();
+      });
+
+
+
+      });
+
+    </script>
   </body>
 </html>
