@@ -319,6 +319,9 @@ footer img{
 #hero-banner-index{
 	background-image: url(img/hero-bg-1.jpg);
 	background-repeat: repeat-x;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 #hero-bazar img{
 	min-height: 350px;
@@ -387,13 +390,12 @@ footer img{
 	color: white;
 }
 #hero-arrow{
-	margin-bottom: 30px;
+	margin-top: 50px;
 }
 #hero-arrow img{
 	width: 40px;
 }
 #lo-quiero{
-	position: absolute;
 	width: 70%;
 	max-width: 500px;
 }
