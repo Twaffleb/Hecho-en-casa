@@ -62,14 +62,6 @@ nav ul li a:hover {
     color: #FF9D2B;
     font-weight: 600;
 }
-.hero-banner{
-	display: inline-block;
-	width: 100%;
-	height: 500px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-}
 .main-content{
 	background-image: url(img/texture-bg.jpg);
 	background-repeat: repeat-x;
@@ -179,8 +171,9 @@ footer img{
 }
 .row{
 	display: flex;
+	box-sizing: border-box;
 }
-.row div{
+.row-text, .row-image{
 	width: 50%;
 	height: 500px;
 	display: flex;
@@ -192,6 +185,7 @@ footer img{
 	overflow: hidden;
     background-size: cover;
     background-position: center;
+    max-width: 50%;
 }
 #row-image-1{
     background-image: url('img/bazar-pic-1.jpg')
@@ -202,13 +196,19 @@ footer img{
 #row-image-3{
     background-image: url('img/bazar-pic-3.jpg')
 }
+#row-image-4{
+	background-image: url('img/home-photo-1.jpg')
+}
+#row-image-5{
+	background-image: url('img/home-photo-2.jpg')
+}
+
 .row-text{
 	padding: 40px;
 	text-align: center;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 }
 .row-text h1{
 	font-size: 30px;
@@ -254,63 +254,27 @@ footer img{
 #volver-al-inicio a:hover{
 	text-decoration: none;
 }
-.hero-width{
+.hero-banner{
+	display: inline-block;
+	width: 100%;
+	height: 500px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	max-width: 1800px;
+}
+.hero-width{
+	max-width: 2000px;
+	height: 100%;
 	margin: 0 auto;
+	display: flex;
+	align-items: center;
 }
 .hero-text, .hero-image{
-	width: 50%;
 	height: 100%;
-}
-.hero-image{
 	display: flex;
-	align-items: center;
 }
-.hero-image img{
-	width: auto;
-}
-.hero-banner{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.hero-banner-1{
-	background-image: url(img/hero-bg-1.jpg);
-	background-repeat: repeat-x;
-}
-.hero-banner-2{
-	background-image: url(img/hero-bg-2.jpg);
-	background-repeat: repeat-x;
-}
-.hero-banner-3{
-	background-image: url(img/hero-bg-3.jpg);
-	background-repeat: repeat-x;
-}
-.hero-banner-4{
-	background-image: url(img/hero-bg-4.jpg);
-	background-repeat: repeat-x;
-}
-.hero-banner-4 img{
-	height: 50%;
-	max-width: 80%;
-}
-#hero-bazar{
-	height: 500px;
-}
-#hero-banner-index{
-	background-image: url(img/hero-bg-1.jpg);
-	background-repeat: repeat-x;
-}
-
 .hero-text{
-	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 500px;
 }
 .hero-text h1{
 	color: white;
@@ -318,6 +282,46 @@ footer img{
 	font-size: 50px;
 	border-bottom: 4px solid #FF9D2B;
 	margin:0 auto;
+	margin-left: 40px;
+}
+.hero-image{
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.hero-image img{
+	max-width: 100%;
+	height: auto;
+}
+
+#hero-banner-1{
+	background-image: url(img/hero-bg-1.jpg);
+	background-repeat: repeat-x;
+}
+#hero-banner-2{
+	background-image: url(img/hero-bg-2.jpg);
+	background-repeat: repeat-x;
+}
+#hero-banner-3{
+	background-image: url(img/hero-bg-3.jpg);
+	background-repeat: repeat-x;
+}
+#hero-banner-4{
+	background-image: url(img/hero-bg-4.jpg);
+	background-repeat: repeat-x;
+	display: flex;
+	align-items: center;
+}
+#hero-banner-4 img{
+	height: 50%;
+	margin: 0 auto;
+	max-width: 80%;
+}
+#hero-banner-index{
+	background-image: url(img/hero-bg-1.jpg);
+	background-repeat: repeat-x;
+}
+#hero-bazar img{
+	min-height: 350px;
 }
 
 
@@ -351,23 +355,26 @@ footer img{
 	display: flex;
 	flex-direction: column;
 	background-color: #D9FCFF;
+	overflow: hidden;
 }
 /* bazar */
 
 #bazar-grid{
 	background-color: #FF9D2B;
 	color: white;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 #participar{
 	background-color: #7AD6DF;
 }
 #locations{
 	display: flex;
+	justify-content: space-around;
 	flex-direction: row;
-	width: 400px;
+	width: 100%;
 	line-height: 20px;
 	font-size: 18px;
-	justify-content: space-around;
 }
 #locations a{
 	text-decoration: none;
@@ -938,8 +945,9 @@ footer img{
 	.row{
 		flex-direction: column;
 	}
-	.row div{
+	.row-text, .row-image{
 		width: 100%;
+		max-width: 100%;
 	}
 	#row-2{
 		flex-direction: column-reverse;
@@ -1000,12 +1008,16 @@ footer img{
 	.hero-width{
 		flex-direction: column;
 	}
+	#hero-bazar{
+		flex-direction: row;
+	}
 	.hero-text, .hero-image{
 		height: 250px;
 		width: 100%;
 	}
 	.hero-image img{
 		height: 100%;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 	.hero-text {
